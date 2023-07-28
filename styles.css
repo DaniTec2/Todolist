@@ -1,0 +1,125 @@
+body {
+    background-color: #61ff98; /* Fondo más claro */
+    color: #333; /* Texto más oscuro */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrado de contenido en la página */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.glitch {
+    font-size: 40px;
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-5px);
+        opacity: 0.75;
+    }
+    50% {
+        transform: translateY(5px);
+        opacity: 0.75;
+    }
+    75% {
+        transform: translateY(-2px);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(2px);
+        opacity: 1;
+    }
+}
+
+.box {
+    background-color: #85ffc4; /* Color de fondo más juvenil */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+input[type="text"] {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 93%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #69e1ff; /* Rojo anaranjado */
+    color: #000000; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #14ccff; /* Rojo más claro al pasar el ratón */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: #fffaeb; /* Amarillo claro */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Icono futurista */
+input[type="text"]::placeholder:before {
+    content: "🚀 ";
+    color: #ff6f69; /* Rojo anaranjado */
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+/* Barra de desplazamiento personalizada para la lista */
+ul::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff; /* Fondo blanco */
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #ff6f69; /* Rojo anaranjado */
+    border-radius: 5px;
+}
+
+
+
+
